@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "short_name": "test",
+  "description": "testing overscroll color behavior on mac",
+  "lang": "en-US",
+  "start_url": "\/",
+  "orientation": "portrait",
+  "display": "standalone",
+  "scope": "\/",
+  "background_color": "#000000",
+  "theme_color": "#0000ff"
+}
