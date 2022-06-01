@@ -49,18 +49,19 @@
       <div></div>
       <div></div>
       <script>
-        var scrollPosition = 0;
-        window.addEventListener('scroll', function(){
-        var windowY = window.pageYOffset;
+            var scrollPosition = 0;
+            window.addEventListener('scroll', func, 10);
+          function func(){
+             var windowY = window.pageYOffset;
             if (windowY < this.scrollPosition) {
-            // Scrolling UP
-            document.documentElement.classList.add('up');
-        } else {
-            // Scrolling DOWN
-            document.documentElement.classList.remove('down');
-        }
+                // Scrolling UP
+                document.documentElement.classList.add('up');
+            } else {
+                // Scrolling DOWN
+                document.documentElement.classList.remove('down');
+            }
             scrollPosition = windowY;
-        }, 10));
+        }
       </script>
   </body>
 </html>
