@@ -45,5 +45,19 @@
       <div></div>
       <div></div>
       <div></div>
+      <script>
+        var scrollPosition = 0;
+        window.addEventListener('scroll', function(){
+        var windowY = window.pageYOffset;
+            if (windowY < this.scrollPosition) {
+            // Scrolling UP
+            this.showNavigationTabs();
+        } else {
+            // Scrolling DOWN
+            this.hideNavigationTabs();
+        }
+            scrollPosition = windowY;
+        }, 10));
+      </script>
   </body>
 </html>
