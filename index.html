@@ -51,10 +51,10 @@
         var windowY = window.pageYOffset;
             if (windowY < this.scrollPosition) {
             // Scrolling UP
-            this.showNavigationTabs();
+            document.documentElement.classList.add('up');
         } else {
             // Scrolling DOWN
-            this.hideNavigationTabs();
+            document.documentElement.classList.remove('down');
         }
             scrollPosition = windowY;
         }, 10));
