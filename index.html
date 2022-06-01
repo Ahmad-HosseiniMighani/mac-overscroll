@@ -55,10 +55,12 @@
              var windowY = window.pageYOffset;
             if (windowY < this.scrollPosition) {
                 // Scrolling UP
+                document.documentElement.classList.remove('down');
                 document.documentElement.classList.add('up');
             } else {
                 // Scrolling DOWN
-                document.documentElement.classList.remove('down');
+                document.documentElement.classList.remove('up');
+                document.documentElement.classList.add('down');
             }
             scrollPosition = windowY;
         }
